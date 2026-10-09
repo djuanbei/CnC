@@ -669,6 +669,12 @@ int march_solve_rec() {
 	}
 	while( (percentage_forced > 50.0) || (branch_literal == 0) );
 
+        if (cnc_branch_only) {
+            printf("b %d\n", branch_literal);
+            fflush(stdout);
+            exit(0);
+        }
+
 	_percentage_forced = percentage_forced;
 
 	if (gah && depth == 0) {

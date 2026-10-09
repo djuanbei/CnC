@@ -15,6 +15,8 @@
 
 //#define SCHUR
 
+extern int cnc_branch_only;
+
 #define CUBE
 
 #ifdef CUBE

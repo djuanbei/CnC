@@ -68,3 +68,17 @@ c MAGIC CONSTANTS:
    -sli <int>    singlelook iterations     (default:      9)
    -dli <int>    doublelook iterations     (default:      2)
 ```
+
+
+Symmetry-aware workflow and resume
+=================================
+
+An opt-in C++17 orchestrator adds bounded conquer attempts, recursive splitting,
+verified dejavu orbital branching, exact nauty duplicate suppression, and durable
+checkpoint/resume support for both conquer backends.
+
+Build with `./build.sh orchestrator`, then run `./orchestrator/cnc --help`.
+The new target requires nauty 2.9.3 and OpenSSL development libraries; existing
+builds do not. See [usage, checkpoint format, and correctness notes](doc/orchestrator.md),
+[dependency pins](orchestrator/vendor/README.md), and the
+[smoke benchmark report](doc/orchestrator-benchmark.md).

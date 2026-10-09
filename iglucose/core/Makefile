@@ -1,4 +1,4 @@
 EXEC      = iglucose
 DEPDIR    = mtl utils
-MROOT = $(PWD)/..
+MROOT = $(CURDIR)/..
 include $(MROOT)/mtl/template.mk

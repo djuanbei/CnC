@@ -1,7 +1,7 @@
 #CLAGS	=	-std=c99 -O3 -static -fno-strict-aliasing -Wall
 #CFLAGS	=	-O3 -static -fno-strict-aliasing -Wall -DNDEBUG
 #CFLAGS	=	-Wall -ggdb -pg
-CFLAGS	=	-O3 -fno-strict-aliasing -Wall -DNDEBUG
+CFLAGS	=	-O3 -fcommon -fno-strict-aliasing -Wall -DNDEBUG
 
 CC	= 	gcc
 

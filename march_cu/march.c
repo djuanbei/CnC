@@ -32,6 +32,8 @@ void handleUNSAT () {
   disposeFormula();
   exit (EXIT_CODE_UNSAT); }
 
+int cnc_branch_only = 0;
+
 int main (int argc, char** argv) {
   int result   = UNKNOWN;
   int exitcode = EXIT_CODE_UNKNOWN;
@@ -107,6 +109,7 @@ int main (int argc, char** argv) {
       return EXIT_CODE_UNKNOWN; }
 
   for (i = 2; i < argc; i++) {
+    if (strcmp(argv[i], "-branch-only") == 0) { cnc_branch_only = 1; }
     if (strcmp(argv[i], "-o"  ) == 0) { strcpy (cubesFile, argv[i+1]); }
     if (strcmp(argv[i], "-p"  ) == 0) { mode = PLAIN_MODE;             }
     if (strcmp(argv[i], "-#"  ) == 0) { sharp_mode = 1;                }
