@@ -1,0 +1,119 @@
+{
+  "max_cubes": 127,
+  "deadline_seconds": 60.0,
+  "cases": [
+    {
+      "name": "decomposition-iglucose-combined",
+      "exit_code": 0,
+      "seconds": 51.4879,
+      "outcome": "UNKNOWN",
+      "checkpoint": "/tmp/cnc-ramsey-final/decomposition-iglucose-combined-checkpoint",
+      "log": "/tmp/cnc-ramsey-final/decomposition-iglucose-combined-continue-1791629606577224000.log",
+      "previous_cubes": 5,
+      "cubes": 127,
+      "states": {
+        "SPLIT": 63,
+        "UNSAT": 7,
+        "UNRESOLVED": 57
+      },
+      "counters": {
+        "attempts": 125,
+        "generated_cubes": 127,
+        "index_bytes_charged": 66228746,
+        "index_full": 110,
+        "lookahead_splits": 5,
+        "max_depth": 7,
+        "maxrss_platform_units": 231047168,
+        "orbital_splits": 58,
+        "peak_workers": 2,
+        "timeouts": 120
+      },
+      "checkpoint_preservation_verified": true
+    },
+    {
+      "name": "decomposition-ilingeling-combined",
+      "exit_code": 0,
+      "seconds": 51.803,
+      "outcome": "UNKNOWN",
+      "checkpoint": "/tmp/cnc-ramsey-final/decomposition-ilingeling-combined-checkpoint",
+      "log": "/tmp/cnc-ramsey-final/decomposition-ilingeling-combined-continue-1791629606577224000.log",
+      "previous_cubes": 5,
+      "cubes": 127,
+      "states": {
+        "SPLIT": 63,
+        "UNSAT": 7,
+        "UNRESOLVED": 57
+      },
+      "counters": {
+        "attempts": 125,
+        "generated_cubes": 127,
+        "index_bytes_charged": 66228746,
+        "index_full": 110,
+        "lookahead_splits": 5,
+        "max_depth": 7,
+        "maxrss_platform_units": 223264768,
+        "orbital_splits": 58,
+        "peak_workers": 2,
+        "timeouts": 120
+      },
+      "checkpoint_preservation_verified": true
+    },
+    {
+      "name": "extension-iglucose-combined",
+      "exit_code": 3,
+      "seconds": 60.5231,
+      "outcome": "PAUSED",
+      "checkpoint": "/tmp/cnc-ramsey-final/extension-iglucose-combined-checkpoint",
+      "log": "/tmp/cnc-ramsey-final/extension-iglucose-combined-continue-1791629606577224000.log",
+      "previous_cubes": 5,
+      "cubes": 127,
+      "states": {
+        "SPLIT": 63,
+        "UNSAT": 17,
+        "UNRESOLVED": 19,
+        "QUEUED": 28
+      },
+      "counters": {
+        "attempts": 86,
+        "generated_cubes": 127,
+        "index_bytes_charged": 66388092,
+        "index_full": 78,
+        "max_depth": 11,
+        "maxrss_platform_units": 312279040,
+        "orbital_splits": 63,
+        "peak_workers": 2,
+        "timeouts": 82
+      },
+      "checkpoint_preservation_verified": true
+    },
+    {
+      "name": "extension-ilingeling-combined",
+      "exit_code": 3,
+      "seconds": 60.515,
+      "outcome": "PAUSED",
+      "checkpoint": "/tmp/cnc-ramsey-final/extension-ilingeling-combined-checkpoint",
+      "log": "/tmp/cnc-ramsey-final/extension-ilingeling-combined-continue-1791629606577224000.log",
+      "previous_cubes": 5,
+      "cubes": 127,
+      "states": {
+        "SPLIT": 63,
+        "UNSAT": 17,
+        "UNRESOLVED": 18,
+        "QUEUED": 29
+      },
+      "counters": {
+        "attempts": 84,
+        "generated_cubes": 127,
+        "index_bytes_charged": 66388092,
+        "index_full": 76,
+        "max_depth": 11,
+        "maxrss_platform_units": 313425920,
+        "orbital_splits": 63,
+        "peak_workers": 2,
+        "timeouts": 81
+      },
+      "checkpoint_preservation_verified": true
+    }
+  ],
+  "required_decision_met": false
+}

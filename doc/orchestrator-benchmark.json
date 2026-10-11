@@ -1,0 +1,1040 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "attempt_seconds": 0.1,
+  "workers": 1,
+  "seed": 0,
+  "external_limit_seconds": 5,
+  "results": [
+    {
+      "backend": "iglucose",
+      "input": "symmetric-sat",
+      "mode": "legacy",
+      "exit": 10,
+      "seconds": 0.0028413749969331548
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-sat",
+      "mode": "plain",
+      "exit": 10,
+      "seconds": 0.008701832994120196,
+      "phase_seconds": {
+        "conquer": 0.003416083,
+        "residual": 7.92e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5193728
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-sat",
+      "mode": "symmetry",
+      "exit": 10,
+      "seconds": 0.008678541998961009,
+      "phase_seconds": {
+        "conquer": 0.00355875,
+        "residual": 7.5e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-sat",
+      "mode": "deduplicate",
+      "exit": 10,
+      "seconds": 0.011950083993724547,
+      "phase_seconds": {
+        "canonical": 0.00339175,
+        "conquer": 0.003461,
+        "residual": 8.33e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1811,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-sat",
+      "mode": "combined",
+      "exit": 10,
+      "seconds": 0.012453792005544528,
+      "phase_seconds": {
+        "canonical": 0.00349575,
+        "conquer": 0.003385208,
+        "residual": 7.5e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1811,
+        "max_depth": 0,
+        "maxrss_platform_units": 5193728
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-sat",
+      "mode": "checkpoint",
+      "exit": 10,
+      "seconds": 0.013708833997952752,
+      "phase_seconds": {
+        "canonical": 0.003738542,
+        "checkpoint": 0.001113999,
+        "conquer": 0.003494583,
+        "residual": 1.875e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1811,
+        "max_depth": 0,
+        "maxrss_platform_units": 5324800
+      },
+      "checkpoint_bytes": 3516,
+      "restore_seconds": 0.005873625006643124
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-unsat",
+      "mode": "legacy",
+      "exit": 20,
+      "seconds": 0.0024504160101059824
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-unsat",
+      "mode": "plain",
+      "exit": 20,
+      "seconds": 0.008194708003429696,
+      "phase_seconds": {
+        "conquer": 0.00261825,
+        "residual": 7.91e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5177344
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-unsat",
+      "mode": "symmetry",
+      "exit": 20,
+      "seconds": 0.009374250003020279,
+      "phase_seconds": {
+        "conquer": 0.003567625,
+        "residual": 7.5e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5177344
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-unsat",
+      "mode": "deduplicate",
+      "exit": 20,
+      "seconds": 0.012135417011450045,
+      "phase_seconds": {
+        "canonical": 0.003386459,
+        "conquer": 0.003445791,
+        "residual": 8.75e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1590,
+        "max_depth": 0,
+        "maxrss_platform_units": 5193728
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-unsat",
+      "mode": "combined",
+      "exit": 20,
+      "seconds": 0.012400207997416146,
+      "phase_seconds": {
+        "canonical": 0.0035325,
+        "conquer": 0.003464834,
+        "residual": 1.167e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1590,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "symmetric-unsat",
+      "mode": "checkpoint",
+      "exit": 20,
+      "seconds": 0.013135542001691647,
+      "phase_seconds": {
+        "canonical": 0.003406208,
+        "checkpoint": 0.000931501,
+        "conquer": 0.003458375,
+        "residual": 1.667e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1590,
+        "max_depth": 0,
+        "maxrss_platform_units": 5324800
+      },
+      "checkpoint_bytes": 3524,
+      "restore_seconds": 0.005960665992461145
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-sat",
+      "mode": "legacy",
+      "exit": 10,
+      "seconds": 0.0022762919979868457
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-sat",
+      "mode": "plain",
+      "exit": 10,
+      "seconds": 0.008127332999720238,
+      "phase_seconds": {
+        "conquer": 0.003444666,
+        "residual": 9.58e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5193728
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-sat",
+      "mode": "symmetry",
+      "exit": 10,
+      "seconds": 0.008034792001126334,
+      "phase_seconds": {
+        "conquer": 0.00340825,
+        "residual": 7.92e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5177344
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-sat",
+      "mode": "deduplicate",
+      "exit": 10,
+      "seconds": 0.012350167002296075,
+      "phase_seconds": {
+        "canonical": 0.003442583,
+        "conquer": 0.003581292,
+        "residual": 9.17e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2050,
+        "max_depth": 0,
+        "maxrss_platform_units": 5226496
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-sat",
+      "mode": "combined",
+      "exit": 10,
+      "seconds": 0.012409707996994257,
+      "phase_seconds": {
+        "canonical": 0.003431625,
+        "conquer": 0.003546458,
+        "residual": 1.042e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2050,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-sat",
+      "mode": "checkpoint",
+      "exit": 10,
+      "seconds": 0.013219667001976632,
+      "phase_seconds": {
+        "canonical": 0.003444166,
+        "checkpoint": 0.000913749,
+        "conquer": 0.003441416,
+        "residual": 1.833e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2050,
+        "max_depth": 0,
+        "maxrss_platform_units": 5308416
+      },
+      "checkpoint_bytes": 3552,
+      "restore_seconds": 0.005163875001017004
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-unsat",
+      "mode": "legacy",
+      "exit": 20,
+      "seconds": 0.0029152499919291586
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-unsat",
+      "mode": "plain",
+      "exit": 20,
+      "seconds": 0.008402833002037369,
+      "phase_seconds": {
+        "conquer": 0.003406958,
+        "residual": 1.042e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5193728
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-unsat",
+      "mode": "symmetry",
+      "exit": 20,
+      "seconds": 0.00877629200113006,
+      "phase_seconds": {
+        "conquer": 0.003449291,
+        "residual": 1.041e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-unsat",
+      "mode": "deduplicate",
+      "exit": 20,
+      "seconds": 0.011853292002342641,
+      "phase_seconds": {
+        "canonical": 0.003433625,
+        "conquer": 0.003487417,
+        "residual": 1e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1828,
+        "max_depth": 0,
+        "maxrss_platform_units": 5226496
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-unsat",
+      "mode": "combined",
+      "exit": 20,
+      "seconds": 0.01237145799677819,
+      "phase_seconds": {
+        "canonical": 0.003460542,
+        "conquer": 0.003417958,
+        "residual": 9.17e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1828,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "asymmetric-unsat",
+      "mode": "checkpoint",
+      "exit": 20,
+      "seconds": 0.01287916699948255,
+      "phase_seconds": {
+        "canonical": 0.003446041,
+        "checkpoint": 0.000971624,
+        "conquer": 0.00344125,
+        "residual": 1.791e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1828,
+        "max_depth": 0,
+        "maxrss_platform_units": 5308416
+      },
+      "checkpoint_bytes": 3538,
+      "restore_seconds": 0.005727625000872649
+    },
+    {
+      "backend": "iglucose",
+      "input": "Rivest",
+      "mode": "legacy",
+      "exit": 20,
+      "seconds": 0.0050885419914266095
+    },
+    {
+      "backend": "iglucose",
+      "input": "Rivest",
+      "mode": "plain",
+      "exit": 20,
+      "seconds": 0.008641207998152822,
+      "phase_seconds": {
+        "conquer": 0.003478375,
+        "residual": 1.458e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5193728
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "Rivest",
+      "mode": "symmetry",
+      "exit": 20,
+      "seconds": 0.008474957998259924,
+      "phase_seconds": {
+        "conquer": 0.003462333,
+        "residual": 1.375e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 5177344
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "Rivest",
+      "mode": "deduplicate",
+      "exit": 20,
+      "seconds": 0.011737207998521626,
+      "phase_seconds": {
+        "canonical": 0.003447625,
+        "conquer": 0.003478375,
+        "residual": 1.333e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2098,
+        "max_depth": 0,
+        "maxrss_platform_units": 5210112
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "Rivest",
+      "mode": "combined",
+      "exit": 20,
+      "seconds": 0.012266458012163639,
+      "phase_seconds": {
+        "canonical": 0.003445917,
+        "conquer": 0.003433667,
+        "residual": 1.583e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2098,
+        "max_depth": 0,
+        "maxrss_platform_units": 5177344
+      }
+    },
+    {
+      "backend": "iglucose",
+      "input": "Rivest",
+      "mode": "checkpoint",
+      "exit": 20,
+      "seconds": 0.013122167001711205,
+      "phase_seconds": {
+        "canonical": 0.003508625,
+        "checkpoint": 0.00098325,
+        "conquer": 0.003605833,
+        "residual": 2.583e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2098,
+        "max_depth": 0,
+        "maxrss_platform_units": 5308416
+      },
+      "checkpoint_bytes": 3648,
+      "restore_seconds": 0.005763500012108125
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-sat",
+      "mode": "legacy",
+      "exit": 10,
+      "seconds": 0.0022624999983236194
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-sat",
+      "mode": "plain",
+      "exit": 10,
+      "seconds": 0.009327624997240491,
+      "phase_seconds": {
+        "conquer": 0.003561083,
+        "residual": 6.66e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6045696
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-sat",
+      "mode": "symmetry",
+      "exit": 10,
+      "seconds": 0.009844749991316348,
+      "phase_seconds": {
+        "conquer": 0.003456167,
+        "residual": 7.08e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6062080
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-sat",
+      "mode": "deduplicate",
+      "exit": 10,
+      "seconds": 0.013120584000716917,
+      "phase_seconds": {
+        "canonical": 0.0031,
+        "conquer": 0.003556125,
+        "residual": 7.92e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1811,
+        "max_depth": 0,
+        "maxrss_platform_units": 6062080
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-sat",
+      "mode": "combined",
+      "exit": 10,
+      "seconds": 0.013918124997871928,
+      "phase_seconds": {
+        "canonical": 0.003492458,
+        "conquer": 0.003506584,
+        "residual": 6.66e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1811,
+        "max_depth": 0,
+        "maxrss_platform_units": 6062080
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-sat",
+      "mode": "checkpoint",
+      "exit": 10,
+      "seconds": 0.014427125002839603,
+      "phase_seconds": {
+        "canonical": 0.003619792,
+        "checkpoint": 0.000996791,
+        "conquer": 0.003519042,
+        "residual": 1.542e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1811,
+        "max_depth": 0,
+        "maxrss_platform_units": 6144000
+      },
+      "checkpoint_bytes": 3513,
+      "restore_seconds": 0.0068467920063994825
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-unsat",
+      "mode": "legacy",
+      "exit": 20,
+      "seconds": 0.002712625006097369
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-unsat",
+      "mode": "plain",
+      "exit": 20,
+      "seconds": 0.010169375003897585,
+      "phase_seconds": {
+        "conquer": 0.003523125,
+        "residual": 8.33e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6062080
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-unsat",
+      "mode": "symmetry",
+      "exit": 20,
+      "seconds": 0.00998470799822826,
+      "phase_seconds": {
+        "conquer": 0.003773833,
+        "residual": 9.58e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6045696
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-unsat",
+      "mode": "deduplicate",
+      "exit": 20,
+      "seconds": 0.014201374986441806,
+      "phase_seconds": {
+        "canonical": 0.003600084,
+        "conquer": 0.003791333,
+        "residual": 8.75e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1590,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-unsat",
+      "mode": "combined",
+      "exit": 20,
+      "seconds": 0.013341166995815001,
+      "phase_seconds": {
+        "canonical": 0.003569417,
+        "conquer": 0.003523917,
+        "residual": 8.75e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1590,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "symmetric-unsat",
+      "mode": "checkpoint",
+      "exit": 20,
+      "seconds": 0.014763208004296757,
+      "phase_seconds": {
+        "canonical": 0.003433708,
+        "checkpoint": 0.001013584,
+        "conquer": 0.003512625,
+        "residual": 1.875e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1590,
+        "max_depth": 0,
+        "maxrss_platform_units": 6193152
+      },
+      "checkpoint_bytes": 3520,
+      "restore_seconds": 0.006853957995190285
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-sat",
+      "mode": "legacy",
+      "exit": 10,
+      "seconds": 0.0025314999948022887
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-sat",
+      "mode": "plain",
+      "exit": 10,
+      "seconds": 0.00930579200212378,
+      "phase_seconds": {
+        "conquer": 0.0034415,
+        "residual": 7.91e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-sat",
+      "mode": "symmetry",
+      "exit": 10,
+      "seconds": 0.009793207995244302,
+      "phase_seconds": {
+        "conquer": 0.003368917,
+        "residual": 9.17e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-sat",
+      "mode": "deduplicate",
+      "exit": 10,
+      "seconds": 0.013099500007228926,
+      "phase_seconds": {
+        "canonical": 0.003438834,
+        "conquer": 0.003485708,
+        "residual": 8.75e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2050,
+        "max_depth": 0,
+        "maxrss_platform_units": 6094848
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-sat",
+      "mode": "combined",
+      "exit": 10,
+      "seconds": 0.013558417005697265,
+      "phase_seconds": {
+        "canonical": 0.003464833,
+        "conquer": 0.003618333,
+        "residual": 8.75e-07
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2050,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-sat",
+      "mode": "checkpoint",
+      "exit": 10,
+      "seconds": 0.014233292007702403,
+      "phase_seconds": {
+        "canonical": 0.0034995,
+        "checkpoint": 0.00108125,
+        "conquer": 0.003522375,
+        "residual": 1.292e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2050,
+        "max_depth": 0,
+        "maxrss_platform_units": 6160384
+      },
+      "checkpoint_bytes": 3549,
+      "restore_seconds": 0.006707749998895451
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-unsat",
+      "mode": "legacy",
+      "exit": 20,
+      "seconds": 0.0027541250019567087
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-unsat",
+      "mode": "plain",
+      "exit": 20,
+      "seconds": 0.009442750000744127,
+      "phase_seconds": {
+        "conquer": 0.003423,
+        "residual": 1e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6062080
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-unsat",
+      "mode": "symmetry",
+      "exit": 20,
+      "seconds": 0.009620083001209423,
+      "phase_seconds": {
+        "conquer": 0.003669541,
+        "residual": 1.25e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6045696
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-unsat",
+      "mode": "deduplicate",
+      "exit": 20,
+      "seconds": 0.01283337498898618,
+      "phase_seconds": {
+        "canonical": 0.00353525,
+        "conquer": 0.003379042,
+        "residual": 1.041e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1828,
+        "max_depth": 0,
+        "maxrss_platform_units": 6062080
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-unsat",
+      "mode": "combined",
+      "exit": 20,
+      "seconds": 0.012948916002642363,
+      "phase_seconds": {
+        "canonical": 0.003401208,
+        "conquer": 0.00343675,
+        "residual": 1.042e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1828,
+        "max_depth": 0,
+        "maxrss_platform_units": 6094848
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "asymmetric-unsat",
+      "mode": "checkpoint",
+      "exit": 20,
+      "seconds": 0.014627750002546236,
+      "phase_seconds": {
+        "canonical": 0.003539958,
+        "checkpoint": 0.000984792,
+        "conquer": 0.003538166,
+        "residual": 1.625e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 1828,
+        "max_depth": 0,
+        "maxrss_platform_units": 6160384
+      },
+      "checkpoint_bytes": 3544,
+      "restore_seconds": 0.0067138330050511286
+    },
+    {
+      "backend": "ilingeling",
+      "input": "Rivest",
+      "mode": "legacy",
+      "exit": 20,
+      "seconds": 0.00439316600386519
+    },
+    {
+      "backend": "ilingeling",
+      "input": "Rivest",
+      "mode": "plain",
+      "exit": 20,
+      "seconds": 0.009007999993627891,
+      "phase_seconds": {
+        "conquer": 0.003414417,
+        "residual": 1.458e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6094848
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "Rivest",
+      "mode": "symmetry",
+      "exit": 20,
+      "seconds": 0.00931854201189708,
+      "phase_seconds": {
+        "conquer": 0.003427958,
+        "residual": 1.541e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 0,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "Rivest",
+      "mode": "deduplicate",
+      "exit": 20,
+      "seconds": 0.013028000001213513,
+      "phase_seconds": {
+        "canonical": 0.003464041,
+        "conquer": 0.003528709,
+        "residual": 1.625e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2098,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "Rivest",
+      "mode": "combined",
+      "exit": 20,
+      "seconds": 0.013358958007302135,
+      "phase_seconds": {
+        "canonical": 0.0034905,
+        "conquer": 0.003465666,
+        "residual": 1.625e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2098,
+        "max_depth": 0,
+        "maxrss_platform_units": 6078464
+      }
+    },
+    {
+      "backend": "ilingeling",
+      "input": "Rivest",
+      "mode": "checkpoint",
+      "exit": 20,
+      "seconds": 0.014367083000252023,
+      "phase_seconds": {
+        "canonical": 0.003534542,
+        "checkpoint": 0.00099625,
+        "conquer": 0.003569958,
+        "residual": 2.542e-06
+      },
+      "counters": {
+        "attempts": 1,
+        "generated_cubes": 1,
+        "index_bytes_charged": 2098,
+        "max_depth": 0,
+        "maxrss_platform_units": 6127616
+      },
+      "checkpoint_bytes": 3648,
+      "restore_seconds": 0.006251416998566128
+    }
+  ]
+}

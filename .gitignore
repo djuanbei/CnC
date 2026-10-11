@@ -1,0 +1,23 @@
+# Generated solver and orchestration builds
+*.o
+*.a
+iglucose/*/depend.mk
+iglucose/core/iglucose
+iglucose/simp/iglucose
+lingeling/ilingeling
+lingeling/makefile
+lingeling/lglcfg.h
+lingeling/lglcflags.h
+march_cu/march_cu
+orchestrator/cnc
+orchestrator/unit_tests
+__pycache__/
+orchestrator/cnc_fault
+lingeling/lglddtrace
+lingeling/lglmbt
+lingeling/lgluntrace
+lingeling/lingeling
+lingeling/plingeling
+lingeling/treengeling
+orchestrator/cnc_asan
+orchestrator/*.dSYM/

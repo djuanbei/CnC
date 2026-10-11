@@ -177,8 +177,7 @@ int main(int argc, char** argv)
  	    printf("|  Number of clauses:    %12d                                         |\n", S.nClauses()); }
 
  	  if (!S.simplify()){
-            ret = l_False;
- 	    if (res != NULL) fprintf(res, "UNSAT\n");
+            ret = l_False; // The common result writer emits UNSAT exactly once.
  	    if (S.verbosity > 0){
  	      printf("===============================================================================\n");
  	      printf("Solved by unit propagation\n");

@@ -670,7 +670,7 @@ int march_solve_rec() {
 	while( (percentage_forced > 50.0) || (branch_literal == 0) );
 
         if (cnc_branch_only) {
-            printf("b %d\n", branch_literal);
+            printf("\nb %d\n", branch_literal);
             fflush(stdout);
             exit(0);
         }

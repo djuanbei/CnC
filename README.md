@@ -82,3 +82,7 @@ The new target requires nauty 2.9.3 and OpenSSL development libraries; existing
 builds do not. See [usage, checkpoint format, and correctness notes](doc/orchestrator.md),
 [dependency pins](orchestrator/vendor/README.md), and the
 [smoke benchmark report](doc/orchestrator-benchmark.md).
+
+A reproducible [39-vertex Ramsey extension example](tests/ramsey/README.md)
+uses the `24 + 1 + 4 + 3 + 3 + 2 + 2` partition and a seed-only extension.
+See its [measured workflow results and solve limits](doc/ramsey-example.md).

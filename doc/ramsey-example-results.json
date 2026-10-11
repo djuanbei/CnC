@@ -1,0 +1,835 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "limits": {
+    "attempt_seconds": 0.5,
+    "analysis_seconds": 1,
+    "lookahead_seconds": 5,
+    "workers": 2,
+    "initial_max_cubes": 3,
+    "resume_max_cubes": 5,
+    "outer_deadline_seconds": 30
+  },
+  "binaries": {
+    "orchestrator/cnc": "d8205fb07388c73b05e4e3f25578084763e4253ee6c994e076a9c03500ba0d2c",
+    "march_cu/march_cu": "a145a20fca82ffad33abf09d0f0b1d2947b2422dff4e59adb2f0549374e5bb2d",
+    "iglucose/core/iglucose": "2bd942fc3d21550fca02670ba4e526483fd3ee87473c3a2daedaf394b4d20ae4",
+    "lingeling/ilingeling": "c0528a4c0c32a71f0804702a4b6a7a4b7e82562ec4519f62f71e6a1b91b3864a"
+  },
+  "seed_vertices": 24,
+  "seed_edges": 124,
+  "seed_verified": true,
+  "seed_source": "https://users.cecs.anu.edu.au/~bdm/data/r45_24.g6",
+  "assumptions": {
+    "target": "R(5,5,39)",
+    "Hk": "Kk",
+    "singleton": "adjacent to seed; nonadjacent to all H vertices",
+    "cross_block_edges": "free"
+  },
+  "controls": [
+    {
+      "backend": "iglucose",
+      "model_independently_verified": true,
+      "exit_code": 10,
+      "seconds": 0.0101,
+      "outcome": "SAT"
+    },
+    {
+      "backend": "ilingeling",
+      "model_independently_verified": true,
+      "exit_code": 10,
+      "seconds": 0.4962,
+      "outcome": "SAT"
+    }
+  ],
+  "cases": [
+    {
+      "exit_code": 0,
+      "seconds": 1.7044,
+      "outcome": "UNKNOWN",
+      "mode": "decomposition",
+      "backend": "iglucose",
+      "features": "plain",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 149994,
+        "mode": "decomposition",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 328,
+        "free_edges": 413,
+        "satisfied_constraints": 1001848,
+        "h_convention": "complete graphs",
+        "singleton_joined": true,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "a1f7022006e1ba573ef22495bf33d034b717567409ea8cdf113737ec43664f88"
+      },
+      "counters": {
+        "attempts": 3,
+        "generated_cubes": 3,
+        "index_bytes_charged": 0,
+        "lookahead_splits": 1,
+        "max_depth": 1,
+        "maxrss_platform_units": 78741504,
+        "peak_workers": 2,
+        "timeouts": 3
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 1.2057,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 5,
+          "generated_cubes": 5,
+          "index_bytes_charged": 0,
+          "lookahead_splits": 2,
+          "max_depth": 2,
+          "maxrss_platform_units": 80461824,
+          "peak_workers": 2,
+          "timeouts": 5
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 2.6793,
+      "outcome": "UNKNOWN",
+      "mode": "decomposition",
+      "backend": "iglucose",
+      "features": "combined",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 149994,
+        "mode": "decomposition",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 328,
+        "free_edges": 413,
+        "satisfied_constraints": 1001848,
+        "h_convention": "complete graphs",
+        "singleton_joined": true,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "a1f7022006e1ba573ef22495bf33d034b717567409ea8cdf113737ec43664f88"
+      },
+      "counters": {
+        "attempts": 3,
+        "generated_cubes": 3,
+        "index_bytes_charged": 15230922,
+        "max_depth": 1,
+        "maxrss_platform_units": 103743488,
+        "orbital_splits": 1,
+        "peak_workers": 2,
+        "timeouts": 3
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 2.3514,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 5,
+          "generated_cubes": 5,
+          "index_bytes_charged": 25257072,
+          "max_depth": 2,
+          "maxrss_platform_units": 171524096,
+          "orbital_splits": 2,
+          "peak_workers": 2,
+          "timeouts": 5
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 1.7525,
+      "outcome": "UNKNOWN",
+      "mode": "decomposition",
+      "backend": "ilingeling",
+      "features": "plain",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 149994,
+        "mode": "decomposition",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 328,
+        "free_edges": 413,
+        "satisfied_constraints": 1001848,
+        "h_convention": "complete graphs",
+        "singleton_joined": true,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "a1f7022006e1ba573ef22495bf33d034b717567409ea8cdf113737ec43664f88"
+      },
+      "counters": {
+        "attempts": 3,
+        "generated_cubes": 3,
+        "index_bytes_charged": 0,
+        "lookahead_splits": 1,
+        "max_depth": 1,
+        "maxrss_platform_units": 78774272,
+        "peak_workers": 2,
+        "timeouts": 3
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 1.2144,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 5,
+          "generated_cubes": 5,
+          "index_bytes_charged": 0,
+          "lookahead_splits": 2,
+          "max_depth": 2,
+          "maxrss_platform_units": 80543744,
+          "peak_workers": 2,
+          "timeouts": 5
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 2.6294,
+      "outcome": "UNKNOWN",
+      "mode": "decomposition",
+      "backend": "ilingeling",
+      "features": "combined",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 149994,
+        "mode": "decomposition",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24
+          ],
+          [
+            25,
+            26,
+            27,
+            28
+          ],
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 328,
+        "free_edges": 413,
+        "satisfied_constraints": 1001848,
+        "h_convention": "complete graphs",
+        "singleton_joined": true,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "a1f7022006e1ba573ef22495bf33d034b717567409ea8cdf113737ec43664f88"
+      },
+      "counters": {
+        "attempts": 3,
+        "generated_cubes": 3,
+        "index_bytes_charged": 15230922,
+        "max_depth": 1,
+        "maxrss_platform_units": 101711872,
+        "orbital_splits": 1,
+        "peak_workers": 2,
+        "timeouts": 3
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 2.3533,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 5,
+          "generated_cubes": 5,
+          "index_bytes_charged": 25257072,
+          "max_depth": 2,
+          "maxrss_platform_units": 171556864,
+          "orbital_splits": 2,
+          "peak_workers": 2,
+          "timeouts": 5
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 2.3027,
+      "outcome": "UNKNOWN",
+      "mode": "extension",
+      "backend": "iglucose",
+      "features": "plain",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 248157,
+        "mode": "extension",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 276,
+        "free_edges": 465,
+        "satisfied_constraints": 903633,
+        "h_convention": null,
+        "singleton_joined": null,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "7e2b89a5fc5f5eb82f38bd7e40a0ee3b36c574f70a44330615e17bd940b13ac5"
+      },
+      "counters": {
+        "attempts": 3,
+        "generated_cubes": 3,
+        "index_bytes_charged": 0,
+        "lookahead_splits": 1,
+        "max_depth": 1,
+        "maxrss_platform_units": 129056768,
+        "peak_workers": 2,
+        "timeouts": 3
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 1.8181,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 5,
+          "generated_cubes": 5,
+          "index_bytes_charged": 0,
+          "lookahead_splits": 2,
+          "max_depth": 2,
+          "maxrss_platform_units": 137740288,
+          "peak_workers": 2,
+          "timeouts": 5
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 3.7728,
+      "outcome": "UNKNOWN",
+      "mode": "extension",
+      "backend": "iglucose",
+      "features": "combined",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 248157,
+        "mode": "extension",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 276,
+        "free_edges": 465,
+        "satisfied_constraints": 903633,
+        "h_convention": null,
+        "singleton_joined": null,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "7e2b89a5fc5f5eb82f38bd7e40a0ee3b36c574f70a44330615e17bd940b13ac5"
+      },
+      "counters": {
+        "attempts": 2,
+        "generated_cubes": 3,
+        "index_bytes_charged": 19738898,
+        "max_depth": 1,
+        "maxrss_platform_units": 168493056,
+        "orbital_splits": 1,
+        "peak_workers": 1,
+        "timeouts": 2
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 3.3865,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 3,
+          "generated_cubes": 5,
+          "index_bytes_charged": 29337342,
+          "max_depth": 2,
+          "maxrss_platform_units": 225902592,
+          "orbital_splits": 2,
+          "peak_workers": 1,
+          "timeouts": 3
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 2.3006,
+      "outcome": "UNKNOWN",
+      "mode": "extension",
+      "backend": "ilingeling",
+      "features": "plain",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 248157,
+        "mode": "extension",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 276,
+        "free_edges": 465,
+        "satisfied_constraints": 903633,
+        "h_convention": null,
+        "singleton_joined": null,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "7e2b89a5fc5f5eb82f38bd7e40a0ee3b36c574f70a44330615e17bd940b13ac5"
+      },
+      "counters": {
+        "attempts": 3,
+        "generated_cubes": 3,
+        "index_bytes_charged": 0,
+        "lookahead_splits": 1,
+        "max_depth": 1,
+        "maxrss_platform_units": 129056768,
+        "peak_workers": 2,
+        "timeouts": 3
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 1.8097,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 5,
+          "generated_cubes": 5,
+          "index_bytes_charged": 0,
+          "lookahead_splits": 2,
+          "max_depth": 2,
+          "maxrss_platform_units": 137838592,
+          "peak_workers": 2,
+          "timeouts": 5
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "seconds": 3.8538,
+      "outcome": "UNKNOWN",
+      "mode": "extension",
+      "backend": "ilingeling",
+      "features": "combined",
+      "cnf": {
+        "vertices": 39,
+        "variables": 741,
+        "clauses": 248157,
+        "mode": "extension",
+        "forbidden_clique": 5,
+        "forbidden_independent_set": 5,
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        ],
+        "fixed_edges": 276,
+        "free_edges": 465,
+        "satisfied_constraints": 903633,
+        "h_convention": null,
+        "singleton_joined": null,
+        "seed_sha256": "b96cc9d212d4e3be872f4ae88bac87b7d49f0a615525b3829b6cd614b7a9ce2d",
+        "cnf_sha256": "7e2b89a5fc5f5eb82f38bd7e40a0ee3b36c574f70a44330615e17bd940b13ac5"
+      },
+      "counters": {
+        "attempts": 2,
+        "generated_cubes": 3,
+        "index_bytes_charged": 19738898,
+        "max_depth": 1,
+        "maxrss_platform_units": 172048384,
+        "orbital_splits": 1,
+        "peak_workers": 1,
+        "timeouts": 2
+      },
+      "resume": {
+        "exit_code": 0,
+        "seconds": 3.4973,
+        "outcome": "UNKNOWN",
+        "counters": {
+          "attempts": 3,
+          "generated_cubes": 5,
+          "index_bytes_charged": 29337342,
+          "max_depth": 2,
+          "maxrss_platform_units": 226000896,
+          "orbital_splits": 2,
+          "peak_workers": 1,
+          "timeouts": 3
+        }
+      }
+    }
+  ],
+  "workflow_checks_passed": true,
+  "solved_39_vertex_cases": 0,
+  "total_39_vertex_cases": 8,
+  "required_decision_met": false
+}
